@@ -9,7 +9,9 @@
     --hover-color: #404BBF;
     --team-filter-footer-background: #F4F4FD;
     --border-header-color: #E7E9FC;
-}
+    --hero-bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    --customers-icon-color: #8E8F99;
+}   
 
 li {
     list-style: none;
@@ -161,7 +163,11 @@ body {
 
 /* ======= HERO ======= */
 .hero {
-    background-color: var(--main-text-color);
+    background-color:var(--main-text-color);
+    background-image: var(--hero-bg-gradient), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -211,6 +217,19 @@ body {
     width: 264px;
 }
 
+.productivity-icon-link{
+    display: flex;
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* =======ACTIVITY====== */
 .activity{
     padding-bottom: 120px;
@@ -246,6 +265,7 @@ body {
 
 .team-text{
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .text-cards{
@@ -253,6 +273,39 @@ body {
     padding-top: 32px;
 }
 
+.soc-list{
+    display: flex;
+    padding-right: 16px;
+    padding-left: 16px;
+    gap: 24px;
+}
+.soc-icon-link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--logo-btn-color);
+    align-items: center;
+    justify-content: center;
+}
+/* =======CUSTOMERS====== */
+.customers-list{
+    display: flex;
+    gap: 24px;
+}
+.customers-icon-link{
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    border-color: var(--customers-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customers-icon{
+    fill: var(--customers-icon-color);
+}
 /* ======= FOOTER ======= */
 .footer {
     background-color: var(--main-text-color);
@@ -260,6 +313,9 @@ body {
     padding-bottom: 100px;
 }
 
+.footer-container{
+    display: flex;
+}
 .footer-span {
     color: var(--team-filter-footer-background);
 }
@@ -271,8 +327,16 @@ body {
     margin-top: 17.5px;
     width: 264px;
 }
-
-
+.footer-soc > .footer-text{
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+.footer-logo-text{
+    margin-right: 120px;
+}
+.footer-soc > .soc-list{
+    padding: 0;
+}
 /* ======= /FOOTER ======= */
 /* ========PORTFOLIO====== */
 .filter{
