@@ -11,6 +11,7 @@
     --border-header-color: #E7E9FC;
     --hero-bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     --customers-icon-color: #8E8F99;
+    --footer-icon-hover-color: #31D0AA;
 }   
 
 li {
@@ -80,6 +81,11 @@ img{
     margin-bottom: 8px;
 }
 
+.text{
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+}
 /* ======= /COMPONENTS ======= */
 body {
     background-color: var(--background-title-btn-color);
@@ -137,6 +143,7 @@ body {
 .header-menu-link:hover,
 .header-menu-link:focus {
     color: var(--hover-color);
+    
 }
 
 .header-contact {
@@ -288,6 +295,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.team .soc-icon-link:hover,
+.team .soc-icon-link:focus{
+    background-color: var(--hover-color);
+}
 /* =======CUSTOMERS====== */
 .customers-list{
     display: flex;
@@ -305,6 +317,17 @@ body {
 }
 .customers-icon{
     fill: var(--customers-icon-color);
+  
+}
+
+.customers-icon-link:hover, 
+.customers-icon-link:focus{
+    border-color: var(--hover-color);
+}
+
+.customers-icon:hover,
+.customers-icon:focus{
+    fill: var(--hover-color);
 }
 /* ======= FOOTER ======= */
 .footer {
@@ -322,8 +345,6 @@ body {
 
 .footer-text {
     color: var(--team-filter-footer-background);
-    letter-spacing: 0.02em;
-    line-height: 1.5;
     margin-top: 17.5px;
     width: 264px;
 }
@@ -336,6 +357,10 @@ body {
 }
 .footer-soc > .soc-list{
     padding: 0;
+}
+.footer .soc-icon-link:hover,
+.footer .soc-icon-link:focus{
+    background-color: var(--footer-icon-hover-color);
 }
 /* ======= /FOOTER ======= */
 /* ========PORTFOLIO====== */
@@ -366,6 +391,8 @@ body {
     background-color: var(--hover-color);
     cursor: pointer;
     color: var(--background-title-btn-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: none;
 }
 
 .portfolio-text {
@@ -394,4 +421,8 @@ body {
 
 .portfolio-img-link > .text-cards{
     padding-left: 16px;
+}
+.portfolio-item:hover,
+.portfolio-item:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
